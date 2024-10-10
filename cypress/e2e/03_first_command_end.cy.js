@@ -1,3 +1,3 @@
 it('my first test', () => {
-  cy.visit('/')
+  cy.visit('/google')
 });
