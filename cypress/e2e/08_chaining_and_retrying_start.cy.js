@@ -4,6 +4,6 @@ it('chaining and retrying',  () => {
 
   cy.visit('/board/1')
 
-  cy.contains('[data-cy=card]', 'Jun 26 2023')
+  cy.contains('[data-cy=card]', 'Jan 26 2025')
   
 });

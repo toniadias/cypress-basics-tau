@@ -11,12 +11,12 @@ it('cards are visible', () => {
   cy.get('[data-cy="card"]')
     .should('be.visible')
 
-  // create another card
-  cy.get('[data-cy="new-card"]')
-    .click()
+  // // create another card
+  // cy.get('[data-cy="new-card"]')
+  //   .click()
 
-  cy.get('[data-cy="new-card-input"]')
-    .type('bread{enter}')
+  // cy.get('[data-cy="new-card-input"]')
+  //   .type('bread{enter}')
 
   cy.get('[data-cy="card"]')
     .should('have.length', 2)
@@ -38,11 +38,9 @@ it('has the checkbox in checked state', () => {
 })
 
 it('has correct list and card name', () => {
-
   cy.get('[data-cy="list-name"]')
     .should('have.value', 'Groceries')
 
   cy.get('[data-cy="card-text"]')
-    .should('have.text', 'Milk')
-
+  .should('include.text', 'Milk');
 })

@@ -1,11 +1,11 @@
 {
   "name": "cypress-basics-tau",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a companion repository for the [Introduction to Cypress course on Test Automation university](https://testautomationu.applitools.com/cypress-getting-started/)",
   "main": "index.js",
   "scripts": {
-    "cy:open": "./node_modules/.bin/cypress open --e2e --browser chrome",
-    "cy:run": "./node_modules/.bin/cypress run",
+    "cy:open": "cypress open --e2e --browser chrome",
+    "cy:run": "cypress run",
     "postinstall": "git submodule update --init --recursive --remote && cd trelloapp && npm install",
     "start": "cd trelloapp && npm start",
     "trello": "cd trelloapp && npm start"
@@ -18,7 +18,15 @@
   "author": "Filip Hric (https://filiphric.com/)",
   "license": "ISC",
   "dependencies": {
-    "@applitools/eyes-cypress": "^3.33.1",
-    "cypress": "^12.14.0"
-  }
+    "@applitools/eyes-cypress": "^3.44.9",
+    "cypress": "^12.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toniadias/cypress-basics-tau.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toniadias/cypress-basics-tau/issues"
+  },
+  "homepage": "https://github.com/toniadias/cypress-basics-tau#readme"
 }
